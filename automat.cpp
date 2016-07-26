@@ -6,7 +6,7 @@
 
 Automat::Automat(){}
   Automat::Automat(set<char> _azbuka, deque<Stanje> _stanja, set<Prelaz> _prelazi): azbuka(_azbuka), stanja(_stanja), prelazi(_prelazi){}
-  Automat::~Automat(){}
+
 
 void Automat::dodajPrelaz(Prelaz &prelaz){
   if(!prelazi.empty()){
