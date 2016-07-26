@@ -16,7 +16,6 @@ class Automat{
  public:
   Automat();
   Automat(set<char> _azbuka, deque<Stanje> _stanja, set<Prelaz> _prelazi);
-  ~Automat();
   
 
   set<Prelaz> vratiSvePrelazeIzZadatogStanja(Stanje &Q);
