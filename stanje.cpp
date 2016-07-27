@@ -17,7 +17,6 @@ Stanje::Stanje(int _broj): broj(_broj){
 	zavrsno=p.Zavrsno();
   }
 
-  Stanje::~Stanje(){}
 
   int Stanje::Broj() const{
     return broj;
