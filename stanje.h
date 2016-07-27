@@ -17,8 +17,6 @@ class Stanje{
 
   Stanje(const Stanje& p);
 
-  ~Stanje();
-
   int Broj() const;
 
 
