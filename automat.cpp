@@ -43,7 +43,7 @@ void Automat::ucitajAutomat(){
   cout<<"Unesite pocetna stanja automata u obliku: redni_broj_stanja   (Ctrl-D za kraj)"<<endl;
   while(cin>>k){
     if(k<1 || k>n){
-	cout<<endl<<"Broj mora biti u intervalu od 1 do "<<n<<". Pokusajte ponovo."<<endl;
+	cout<<endl<<"Broj mora biti u opsegu od 1 do "<<n<<". Pokusajte ponovo."<<endl;
 	continue;
       }
     stanja[k-1].setPocetno(true);
@@ -53,7 +53,7 @@ void Automat::ucitajAutomat(){
   cout<<endl<<"Unesite zavrsna stanja automata u obliku: redni_broj_stanja   (Ctrl-D za kraj)"<<endl;
   while(cin>>k){
     if(k<1 || k>n){
-      cout<<endl<<"Broj mora biti u intervalu od 1 do "<<n<<". Pokusajte ponovo."<<endl;
+      cout<<endl<<"Broj mora biti u opsegu od 1 do "<<n<<". Pokusajte ponovo."<<endl;
       continue;
     }
     stanja[k-1].setZavrsno(true);
@@ -71,7 +71,7 @@ void Automat::ucitajAutomat(){
 	  continue;
 	}
 	if(k<1 || k>n){
-	  cout<<endl<<"Broj mora biti u intervalu od 1 do "<<n<<". Pokusajte ponovo."<<endl;
+	  cout<<endl<<"Broj mora biti u opsegu od 1 do "<<n<<". Pokusajte ponovo."<<endl;
 	  continue;
 	}
 	Prelaz prelaz=Prelaz(stanja[i], new Karakter(string(1, c)), stanja[k-1]);
