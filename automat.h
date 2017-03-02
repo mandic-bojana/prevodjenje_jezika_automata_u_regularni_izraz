@@ -17,6 +17,8 @@ class Automat{
   Automat();
   Automat(set<char> _azbuka, deque<Stanje> _stanja, set<Prelaz> _prelazi);
   
+  void ucitajAutomat(); 
+  void dodajPrelaz(Prelaz &prelaz);
 
   set<Prelaz> vratiSvePrelazeIzZadatogStanja(Stanje &Q);
   set<Prelaz> vratiSvePrelazeUZadatoStanje(Stanje &Q);	 
@@ -25,9 +27,6 @@ class Automat{
   friend Regex* eliminacijaStanja(const Automat &A);
   
   void ispisPrelaza();
-
-  void ucitajAutomat(); 
-  void dodajPrelaz(Prelaz &prelaz);
     
   friend ostream & operator<<(ostream &o, const Automat &A);  
   
