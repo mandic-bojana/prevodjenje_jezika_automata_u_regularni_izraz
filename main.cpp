@@ -16,4 +16,6 @@ int main(){
 	cout<<endl<<endl<<"Jezik automata je prazan skup."<<endl<<endl;
   else
     cout<<"Regularni izraz za jezik automata je: "<<*jezik<<endl<<endl;
+
+  return 0;
 }
